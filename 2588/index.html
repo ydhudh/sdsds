@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人网站</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+    <script src="config.js"></script>
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">个人网站</div>
+            <div class="nav-links">
+                <a href="#home">首页</a>
+                <a href="#about">关于我</a>
+                <a href="#portfolio">作品集</a>
+                <a href="#ai-chat">AI助手</a>
+                
+            </div>
+        </div>
+    </nav>
+
+    <!-- 首页轮播图部分 -->
+    <section id="home" class="slider-container">
+        <div class="slider">
+            <div class="slide active">
+                <img src="images\企业微信截图_17289780811461.png" alt="图片1">
+                <div class="slide-caption">图片展示 1</div>
+            </div>
+            <div class="slide">
+                <img src="images\企业微信截图_17291741729084.png" alt="图片2">
+                <div class="slide-caption">图片展示 2</div>
+            </div>
+            <div class="slide">
+                <img src="images\wps3.jpg" alt="图片3">
+                <div class="slide-caption">图片展示 3</div>
+            </div>
+        </div>
+        <button class="slider-btn prev">❮</button>
+        <button class="slider-btn next">❯</button>
+        <div class="dots"></div>
+    </section>
+
+    <!-- 关于我部分 -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2>关于我</h2>
+            <div class="about-content">
+                <div class="profile-image">
+                    <img src="https://picsum.photos/300/300" alt="个人照片">
+                </div>
+                <div class="profile-text">
+                    <p>这里是关于我的介绍文字。您可以在这里添加您的个人简介、经历、技能等信息。</p>
+                    <p>可以包含您的教育背景、工作经验、专业技能等内容。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 作品集部分 -->
+    <section id="portfolio" class="portfolio-section">
+        <div class="container">
+            <h2>作品集</h2>
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <img src="https://picsum.photos/400/300?random=1" alt="作品1">
+                </div>
+                <div class="portfolio-item">
+                    <img src="https://picsum.photos/400/300?random=2" alt="作品2">
+                </div>
+                <div class="portfolio-item">
+                    <img src="https://picsum.photos/400/300?random=3" alt="作品3">
+                </div>
+                <div class="portfolio-item">
+                    <img src="https://picsum.photos/400/300?random=4" alt="作品4">
+                </div>
+                <div class="portfolio-item">
+                    <img src="https://picsum.photos/400/300?random=5" alt="作品5">
+                </div>
+                <div class="portfolio-item">
+                    <img src="https://picsum.photos/400/300?random=6" alt="作品6">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI助手部分 -->
+    <section id="ai-chat" class="ai-chat-section">
+        <div class="container">
+            <h2>AI 助手</h2>
+            <div class="chat-container">
+                <div class="chat-box" id="chatBox">
+                    <div class="welcome-message">
+                        您好！我是基于 GLM-4 的 AI 助手，很高兴为您服务。
+                    </div>
+                </div>
+                <div class="chat-input-container">
+                    <textarea id="userInput" placeholder="请输入您的问题..."></textarea>
+                    <button id="startChat" class="chat-button">开始对话</button>
+                    <button id="sendMessage" class="chat-button" style="display: none;">发送</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html> 
